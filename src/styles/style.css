@@ -1,0 +1,132 @@
+body {
+  --norm-width: 250px;
+  --norm-height: 350px;
+  --previous-operand-height: 100px;
+  --grid-template-width: 165px;
+}
+
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--norm-width);
+  height: var(--norm-height);
+  background-color: #F2F2F2;
+  border-radius: 2px;
+}
+
+.calculator_line {
+  background-color: #F2F2F2;
+  border-bottom: 1px solid #DBDBDB;
+  height: 25px;
+  color: #A2A3A7;
+}
+
+#close {
+  float: right;
+  padding-right: 5px;
+  font-size: 25px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+#maximize {
+  float: right;
+  padding-right: 5px;
+  font-size: 15px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+#minimize {
+  float: right;
+  padding-right: 5px;
+  font-size: 15px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.output {
+  font-size: 30px;
+  color: black;
+}
+
+.previous-operand {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  height: var(--previous-operand-height);
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #DBDBDB;
+  text-align: right;
+}
+
+.current-operand {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  height: 44px;
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #DBDBDB;
+  text-align: right;
+}
+
+.calculator_buttons-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #4B4B4B;
+  height: 180px;
+}
+
+.calculator_free-space {
+  background-color: #2F9B7C;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: 165px 61px 25px;
+}
+
+.button {
+  filter: drop-shadow(0px 0.5px 0.5px);
+  background-color: #4B4B4B;
+  border: none;
+  cursor: pointer;
+  color: #EEEEEE;
+  font-size: 21px;
+}
+
+.calculator_buttons-operations {
+  display: grid;
+}
+
+.button-operands {
+  background-color: #777777;
+}
+
+.button:hover {
+  background-color: #4B504B;
+}
+
+.button-operands:hover {
+  background-color: #ACACAC;
+}
+
+.hidden {
+  display: none;
+}
+
+.open_calculator {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  width: 200px;
+  line-height: 30px;
+  text-align: center;
+  border: none;
+  box-shadow: 2px 2px 10px rgb(20, 10, 117);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
